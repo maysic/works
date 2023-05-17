@@ -1,0 +1,11 @@
+@import '../../../../../styles/global.main.scss';
+
+.titleStopwatch {
+	@include text;
+	font-weight: 400;
+	color: $text-color;
+
+	.taskNumber {
+		color: $gray;
+	}
+}

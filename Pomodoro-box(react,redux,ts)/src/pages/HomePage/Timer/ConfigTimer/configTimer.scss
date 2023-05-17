@@ -1,0 +1,101 @@
+@import '../../../../styles/global.main.scss';
+
+.config {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	padding: 50px 50px;
+	background-color: $gray-light-f1;
+
+	.close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	.close svg path {
+		transition: fill 0.2s linear;
+	}
+
+	.close:hover svg path {
+		fill: $text-color;
+	}
+
+
+	.title {
+		margin: 0;
+		margin-bottom: 50px;
+		font-size: 30px;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 30px;
+	}
+
+	.label {
+		display: flex;
+		align-items: center;
+		font-weight: 500;
+
+		.input {
+			width: 60px;
+			height: 30px;
+			margin-right: 10px;
+			padding: 0 5px;
+			border: none;
+			background-color: $white;
+			font-weight: 400;
+			@include text;
+			color: $text-color;
+			transition: outline 0.2s linear;
+		}
+
+		.input:hover {
+			outline: 1px solid $gray;
+		}
+
+		.input:focus {
+			outline: 1px solid $gray;
+		}
+
+
+	}
+
+	.label:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.divBtn {
+	margin-top: auto;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+
+	.btn {
+		padding: 19px 50px;
+		border: none;
+		font-weight: 500;
+		@include text;
+		color: $white;
+	}
+
+	.cancellation {
+		background-color: rgb(220, 62, 34);
+	}
+
+	.reset {
+		background-color: rgb(255, 174, 53);
+	}
+
+	.save {
+		background-color: rgb(168, 182, 79);
+	}
+}
