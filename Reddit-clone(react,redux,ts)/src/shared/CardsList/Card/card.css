@@ -1,0 +1,98 @@
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.card > *, .textContent > * {
+  flex: 1 1 100%;
+}
+.card > * + * {
+  padding: 13px 0 0;
+}
+.card:hover h2 a, .card:focus-within h2 a {
+  color: var(--orange);
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background-color: var(--white);
+}
+
+.closeButton {
+  background-color: var(--greyD9);
+  padding: 12px 23px;
+  border-radius: 0 0 3px 3px;
+  width: 100%;
+}
+
+.menu {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  padding: 0;
+}
+
+.list {
+  position: absolute;
+  left: -95px;
+  bottom: -35px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media all and (min-width: 1024px) {
+  .card {
+    background-color: transparent;
+    flex-flow: row nowrap;
+    max-height: 107px;
+    padding: 0 40px;
+  }
+  .card > * {
+    flex: 0 0;
+  }
+  .card > * + * {
+    padding: 0;
+  }
+  .menu {
+    position: relative;
+    order: 3;
+    display: flex;
+    align-items: center;
+    flex: 0 0;
+    top: unset;
+    right: unset;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+    cursor: pointer;
+  }
+ 
+  .card:hover, .card:focus-within {
+    outline: 1px solid var(--greyD9);
+  } 
+}
+
+
+
+
