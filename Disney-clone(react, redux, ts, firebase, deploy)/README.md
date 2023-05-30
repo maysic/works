@@ -21,4 +21,5 @@
 - swiperjs
 - react-router-dom@6
 - TypeScript
+- Tailwind
 
