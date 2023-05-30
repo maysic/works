@@ -1,0 +1,9 @@
+@mixin headerLink {
+  font-weight: 500;
+  font-size: calc($font-size* 0.7);
+  line-height: 1;
+}
+
+@mixin background {
+  background: linear-gradient(180deg, #00A6E7 0%, rgba(0, 166, 231, 0) 100%);
+}

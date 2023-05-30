@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VOZDUH64</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&family=Days+One&display=swap" rel="stylesheet">
+  <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  <script type="text/javascript">
+    var map;
+
+    DG.then(function () {
+        map = DG.map('map', {
+            center: [51.528502, 46.023343],
+            zoom: 13
+        });
+
+        DG.marker([51.528502, 46.023343]).addTo(map).bindPopup('VOZDUH64');
+    });
+  </script>
+</head>
+<body >
+  <header class="header">
+    <div class="container">
+      <div class="header__box">
+        <a href="#menu" class="header__menu header__link">
+          Меню
+        </a>
+        <button class="header__btn">
+          <a href="tel:+79961280912" class="header__menu">
+            Забронировать
+          </a>
+        </button>
+        <img src="img/logo.png" alt="Логотип" class="header__logo">
+      </div>
+    </div>
+  </header>
+
+  <section class="hero ">
+  <div class="container">
+    <div class="swiper ">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide-1">
+            <div class="slide__box slide__box-1">
+              <h2 class="hero__header">
+                ПОНЕДЕЛЬНИК
+              </h2>
+              <p class="hero__discription">
+                ВСЕ КАЛЬЯНЫ ПО 750Р, КРОМЕ КАЛЬЯНА НА ФРУКТОВОЙ ЧАШЕ
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-2">
+            <div class="slide__box">
+              <h2 class="hero__header header-slide-2">
+                ВТОРНИК
+              </h2>
+              <p class="hero__discription">
+                Лимонад 0,4 классический + сэндвич в ассортименте + кальян - 1250р
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-3">
+            <div class="slide__box">
+              <h2 class="hero__header header-slide-3">
+                СРЕДА
+              </h2>
+              <p class="hero__discription">
+                ФРУКТОВАЯ ЧАША ПО ЦЕНЕ ОБЫЧНОЙ: ВМЕСТО 1400р - 900р
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-4">
+            <div class="slide__box">
+              <h2 class="hero__header header-slide-4">
+                ЧЕТВЕРГ
+              </h2>
+              <p class="hero__discription">
+                МИКС ДНЯ ВСЕГО ЗА 750Р ВМЕСТО 900Р
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-5">
+            <div class="slide__box">
+              <h2 class="hero__header header-slide-5">
+                ПЯТНИЦА
+              </h2>
+              <p class="hero__discription">
+                ГОСТИ, ОПЛАТИВШИЕ СЧЕТ НАЛИЧКОЙ, ПОЛУЧАЮТ СКИДКУ 50% НА ВТОРОЙ КАЛЬЯН
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide slide-6">
+            <div class="slide__box">
+              <h2 class="hero__header header-slide-6">
+                СУББОТА
+              </h2>
+              <p class="hero__discription">
+                ПОКУПАЕШЬ 2 КОКТЕЙЛЯ, ПОЛУЧАЕШЬ ТРЕТИЙ В ПОДАРОК
+              </p>
+            </div>
+            <p class="slide-span">
+              ДЕЙСТВУЕТ НА АЛКО И БЕЗАЛКО КОКТЕЙЛИ
+            </p>
+          </div>
+          <!-- <div class="swiper-slide slide-7">
+            <div class="slide__box">
+              <h2 class="hero__header header-sub-header">
+                КОМБО ДЕНЬ
+              </h2>
+             <div class="hero__discription-box">
+                <p class="hero__discription">
+                  КАЛЬЯН + 1Л ЧАЯ + ЧИЗКЕЙК = 1200Р
+                </p>
+                <p class="hero__discription">
+                  КАЛЬЯН + ФИРМЕННЫЙ ЧАЙ + СЫРНИКИ = 1350Р
+                </p>
+             </div>
+              <h2 class="hero__header header-slide-7">
+                ВОСКРЕСЕНЬЕ
+              </h2>
+            </div>
+          </div> -->
+        </div>
+      </div>
+  </div>
+  </section>
+
+  <div class="container container-content">
+
+    <!-- ПРАВИЛА -->
+    <section class="rules">
+      <div class="rules__content">
+        <h3 class="rules__header second-header">
+          НАШИ ПРАВИЛА
+        </h3>
+        <div class="rules__box">
+          <div class="rules__left">
+            <p class="rules__text">
+              <u>Вход только с 18 лет</u><br> При себе обязательно иметь документ удостоверяющий личность, подтверждающий ваш возраст 
+              (не фото, не ксерокопия)
+            </p>
+            <p class="rules__text">
+              У нас дествует правило 5 минут. Если в течение 5 минут после того, как Вам вынесли кальян Вам что-то в нем не понравилось (крепость, вкус), то мы его обязательно поменяем.
+            </p>
+            <p class="rules__text">
+              Для компании от:<br> 
+              5-6 человек 2 кальяна на стол<br>
+              от 8 человек 3 кальяна на стол<br>
+              и тд.
+            </p>
+            <p class="rules__text">
+              <u>КУРЕНИЕ СИГАРЕТ В ЗАВЕДЕНИИ ЗАПРЕЩЕНО</u>
+            </p>
+            <p class="rules__text">
+              Депозит на приставку PS уточняйте у администратора
+            </p>
+            <p class="rules__text">
+              Пробковый сбор также уточняйте у администратора
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- МЕНЮ -->
+    <section class="menu-section">
+      <div class="menu">
+        <h3 class="menu__header second-header" id="menu">
+          МЕНЮ
+        </h3>
+        <div class="menu__tab-bnt-box tabs">
+          <div class="menu__top">
+            <div class="menu__categories">
+              <button class="menu__button" data-path="one" aria-label="КАЛЬЯН">
+                КАЛЬЯН
+              </button>
+              <button class="menu__button" data-path="two" aria-label="НАПИТКИ">
+                НАПИТКИ
+              </button>
+            </div>
+            <div class="menu__categories">
+              <button class="menu__button" data-path="three" aria-label="СЕНДВИЧИ">
+                СЭНДВИЧИ
+              </button>
+              <button class="menu__button" data-path="four" aria-label="СМУЗИ">
+                СМУЗИ
+              </button>
+            </div>
+            <div class="menu__categories">
+              <button class="menu__button" data-path="five" aria-label="КОКТЕЙЛИ">
+                КОКТЕЙЛИ
+              </button>
+              <button class="menu__button" data-path="six" aria-label="ДЕСЕРТЫ">
+                ДЕСЕРТЫ
+              </button>
+            </div>
+            <div class="menu__categories">
+              <button class="menu__button" data-path="seven" aria-label="ЧАЙ/КОФЕ">
+                ЧАЙ / КОФЕ
+              </button>
+              <button class="menu__button" data-path="eight" aria-label="ПИВО/СНЕКИ">
+                ПИВО / СНЕКИ
+              </button>
+            </div>
+          </div>
+          <div class="menu__season">
+            <button class="menu__button menu__button-season" data-path="nine" aria-label="CЕЗОННОЕ МЕНЮ">
+              СЕЗОННОЕ МЕНЮ
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ТАБЫ -->
+      <!-- Кальян -->
+      <div class="tabs-box tabs-box__active show-tab" data-target="one">
+        <div class="menu__tabs hookan">
+          <span class="menu__tabs-header">Классическая чаша</span>
+          <span class="menu__tabs-text">900р</span>
+          <span class="menu__tabs-header">Чаша на фрукте</span>
+          <span class="menu__tabs-text">Грейпфрут</span>
+          <span class="menu__tabs-text">1400р</span>
+          <span class="menu__tabs-text">Гранат</span>
+          <span class="menu__tabs-text">1450р</span>
+          <span class="menu__tabs-text">Ананас</span>
+          <span class="menu__tabs-text">1600р</span>
+          <span class="menu__tabs-text">Авторский кальян</span>
+          <span class="menu__tabs-text">2500р</span>
+        </div>
+      </div>
+
+      <!-- СЕНДВИЧИ -->
+      <div class="tabs-box" data-target="three">
+        <div class="menu__tabs sandwich">
+          <span class="menu__tabs-header">СЭНДВИЧИ</span>
+          <span class="menu__tabs-text">Сэндвич с цыпленком, беконом и яйцом</span>
+          <span class="menu__tabs-text">310р</span>
+          <span class="menu__tabs-text">Сэндвич с ростбифом, корнишонами в соусе тар-тар</span>
+          <span class="menu__tabs-text">330р</span>
+          <span class="menu__tabs-text">Сэндвич с ветчиной и сыром</span>
+          <span class="menu__tabs-text">310р</span>
+          <span class="menu__tabs-text">Ролл с цыпленком, сыром и грибами</span>
+          <span class="menu__tabs-text">330р</span>
+          <span class="menu__tabs-text">Ролл с цыпленком, фасолью и овощами</span>
+          <span class="menu__tabs-text">330р</span>
+          <span class="menu__tabs-text">Панини с цыпленком и сыром</span>
+          <span class="menu__tabs-text">310р</span>
+        </div>
+      </div>
+
+      <!-- КОКТЕЙЛИ -->
+      <div class="tabs-box" data-target="five">
+        <div class="menu__tabs coctails">
+          <span class="menu__tabs-header">КОКТЕЙЛИ Б/А</span>
+          <span class="menu__tabs-text">Кивикадзе</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Киви, сок лимона, сок яблочный, сироп, содовая)</span>
+          <span class="menu__tabs-text">Цитрусовый</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Сок апельсина,  персика, лимона, сироп малина, содовая)</span>
+          <span class="menu__tabs-text">Ягодный</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Сок лимона, ягоды, сироп клубники, мята, содовая)</span>
+          <span class="menu__tabs-text">300мл - 350р  </span>
+          <span class="menu__tabs-header">ОВЕРШЕЙК</span>
+          <span class="menu__tabs-text">Ванильный 450мл - 370р</span>
+          <span class="menu__tabs-text">Шоколадный 450мл -370р</span>
+          <span class="menu__tabs-header">КОКТЕЙЛИ</span>
+          <span class="menu__tabs-text">Гарибальди  350мл - 350р</span>
+          <span class="menu__tabs-text">Мохито класический 250мл - 400р</span>
+          <span class="menu__tabs-text">Мохито клубничный 250мл - 400р</span>
+          <span class="menu__tabs-text">Martini royal 250мл - 450р</span>
+          <span class="menu__tabs-text">Апероль spritz 250мл -  450р</span>
+          <span class="menu__tabs-text">Sour 250мл - 450р</span>
+          <span class="menu__tabs-text">Daiquri 100мл - 350р</span>
+          <span class="menu__tabs-text">Потерян и не найден 450мл - 550₽</span>
+          <span class="menu__tabs-text">Моя Тая 250мл - 450₽</span>
+        </div>
+      </div>
+
+      <!-- ЧАЙ / КОФЕ -->
+      <div class="tabs-box" data-target="seven">
+        <div class="menu__tabs coffee">
+          <span class="menu__tabs-header">ЧАЙ ЧЕРНЫЙ</span>
+          <span class="menu__tabs-text">Ассам</span>
+          <span class="menu__tabs-text">Черный чабрец</span>
+          <span class="menu__tabs-text">Эрл Грей</span>
+          <span class="menu__tabs-text">1л - 350р</span>
+          <span class="menu__tabs-header">ЧАЙ ЗЕЛЕНЫЙ</span>
+          <span class="menu__tabs-text">Сенча</span>
+          <span class="menu__tabs-text">Зеленый с жасмином</span>
+          <span class="menu__tabs-text">Молочный улун</span>
+          <span class="menu__tabs-text">1л - 350р</span>
+          <span class="menu__tabs-header">ФРУКТОВЫЙ</span>
+          <span class="menu__tabs-text">Земляника со сливками</span>
+          <span class="menu__tabs-text">Таежный сбор</span>
+          <span class="menu__tabs-text">Дикая вишня</span>
+          <span class="menu__tabs-text">1л - 350р</span>
+          <span class="menu__tabs-header">ФИРМЕННЫЙ ЧАЙ</span>
+          <span class="menu__tabs-text">Цитрусовый</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Апельсин, лимон, грейпфрут, мята, Чай сенча)</span>
+          <span class="menu__tabs-text">Ягодный микс</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Клубника, вишня, смородина, машина, мята, Чай Ассам)</span>
+          <span class="menu__tabs-text">Облепиховый дзен</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Облепиха, апельсин, лимон, мята, Чай сенча)</span>
+          <span class="menu__tabs-text">Марокканский чай</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Лимон, мята, корица, бадьян, гвоздика, Чай Ассам)</span>
+          <span class="menu__tabs-text">1,5л - 500р</span>
+          <span class="menu__tabs-header">КОФЕ</span>
+          <span class="menu__tabs-text">Эспрессо - 100р</span>
+          <span class="menu__tabs-text">Американо -130р</span>
+          <span class="menu__tabs-text">Капучино - 200р</span>
+          <span class="menu__tabs-text">Латте - 250р</span>
+        </div>
+      </div>
+
+      <!-- НАПИТКИ -->
+      <div class="tabs-box" data-target="two">
+        <div class="menu__tabs beverages">
+          <span class="menu__tabs-header">НАПИТКИ Б/А</span>
+          <span class="menu__tabs-text">Coca Cola - 200р</span>
+          <span class="menu__tabs-text">Sprite - 200р</span>
+          <span class="menu__tabs-text">Fanta - 200p</span>
+          <span class="menu__tabs-text">Adrenalin - 250p</span>
+          <span class="menu__tabs-text">Сок в ассортименте</span>
+          <span class="menu__tabs-text">0,2л - 100р</span>
+          <span class="menu__tabs-text">1л - 250р</span>
+          <span class="menu__tabs-text">Aqua minerale негазированая</span>
+          <span class="menu__tabs-text">110р</span>
+          <span class="menu__tabs-text">Aqua minerale газированая</span>
+          <span class="menu__tabs-text">110р</span>
+          <span class="menu__tabs-header">ЛИМОНАД</span>
+          <span class="menu__tabs-text">Класический</span>
+          <span class="menu__tabs-text">Клубничный</span>
+          <span class="menu__tabs-text">Апельсиновый</span>
+          <span class="menu__tabs-text">1Л - 450р</span>
+        </div>
+      </div>
+
+      <!-- СМУЗИ -->
+      <div class="tabs-box" data-target="four">
+        <div class="menu__tabs smoothies">
+          <span class="menu__tabs-header">СМУЗИ</span>
+          <span class="menu__tabs-text"> Киви- банан</span>
+          <span class="menu__tabs-text">Смородина-банан</span>
+          <span class="menu__tabs-text">Клубника-киви-банан</span>
+          <span class="menu__tabs-text">250мл - 290р</span>
+        </div>
+      </div>
+
+      <!-- ДЕСЕРТЫ -->
+      <div class="tabs-box" data-target="six">
+        <div class="menu__tabs desserts">
+          <span class="menu__tabs-header">ДЕСЕРТЫ</span>
+          <span class="menu__tabs-text">Чизкейк - 300р</span>
+          <span class="menu__tabs-text">Мороженое - 100р</span>
+          <span class="menu__tabs-text">Шоколад Riter Sport -200р</span>
+          <span class="menu__tabs-text">Штрудель вишневый с шариком мороженого - 350р</span>
+          <span class="menu__tabs-text">Сырники с малиной и начинкой - 250р</span>
+        </div>
+      </div>
+
+      <!-- ПИВО / СНЕКИ -->
+      <div class="tabs-box" data-target="eight">
+        <div class="menu__tabs beer">
+          <span class="menu__tabs-header">ПИВО</span>
+          <span class="menu__tabs-text">Krusovice светлое/темное - 250р</span>
+          <span class="menu__tabs-text">Kozel светлое/темное - 250р</span>
+          <span class="menu__tabs-text">Hoegaarden - 280р</span>
+          <!-- <span class="menu__tabs-text">Heineken - 210р</span> -->
+          <span class="menu__tabs-text">Corona - 300р</span>
+          <span class="menu__tabs-header">СНЕКИ</span>
+          <span class="menu__tabs-text">Арахис 100гр -120р</span>
+          <span class="menu__tabs-text">Фисташки 100гр - 280р</span>
+          <span class="menu__tabs-text">Чипсы в ассортименте 40гр - 100р</span>
+          <span class="menu__tabs-text">Сухарики в ассортименте 40гр - 80р</span>
+        </div>
+      </div>
+
+      <!-- СЕЗОННОЕ МЕНЮ  -->
+      <div class="tabs-box" data-target="nine">
+        <div class="menu__tabs season">
+          <!-- <span class="menu__tabs-header">ХОЛОДНЫЙ ЧАЙ</span>
+          <span class="menu__tabs-text">Cold black</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Черный чай, сироп лайма, сок апельсина, лимонный фреш, мята)</span>
+          <span class="menu__tabs-text">Cold green</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Зеленый чай, сок персика, лимонный фреш)</span>
+          <span class="menu__tabs-text">Cold oolong</span>
+          <span class="menu__tabs-text menu__tabs-discription">(Молочный улун, основа маракуйя, лимонный фреш)</span>
+          <span class="menu__tabs-text">450мл - 270р</span> -->
+          <span class="menu__tabs-header">ХОЛОДНЫЙ КОФЕ</span>
+          <span class="menu__tabs-text">Эспрессо тоник</span>
+          <span class="menu__tabs-text">Айс латте</span>
+          <span class="menu__tabs-text">Бамбл</span>
+          <span class="menu__tabs-text">200мл - 250р</span>
+          <span class="menu__tabs-header">ЛИМОНАДЫ</span>
+          
+          <span class="menu__tabs-text">Таёжный</span>
+          <span class="menu__tabs-text">Лавандовый</span>
+          <span class="menu__tabs-text">Клубника-фейхоа</span>
+          <span class="menu__tabs-text">Клубника-базилик</span>
+          <span class="menu__tabs-text">Огуречный</span>
+          <span class="menu__tabs-text">Огурец-апельсин</span>
+          <span class="menu__tabs-text">Облепиховый</span>
+          <span class="menu__tabs-text">Грейпфрут-бузина</span>
+          <span class="menu__tabs-text">450мл - 290р</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- контакты -->
+    <footer>
+      <div class="contacts">
+        <h2 class="footer__header second-header">
+          КОНТАКТЫ
+        </h2>
+        <div class="footer__reserved">
+          <span class="footer__span">
+            Бронь столов
+          </span>
+          <a href="tel:+79961280912" class="footer__tel">
+            +7 (996) 128-09-12
+          </a>
+        </div>
+        <div class="footer__social">
+          <h4 class="footer__social-header second-header">
+            Присоединяйтесь к нам
+          </h4>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="https://t.me/vozduh64" class="footer__link footer__telegram"></a>
+            </li>
+            <li class="footer__item">
+              <a href="https://vk.com/club211798668" class="footer__link footer__vk"></a>
+            </li>
+          </ul>
+        </div>
+
+      <div id="map" style="width:70%; height:250px"></div>
+
+
+      </div>
+    </footer>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

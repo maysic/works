@@ -1,0 +1,35 @@
+@import '_var.scss';
+@import '_mixin.scss';
+
+.hero {
+  height: 90vh;
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 12%;
+  padding-bottom: 100px;
+  .container {
+    height: 100%;
+    padding-left: 3%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+  }
+  &__header {
+    color: $mainColor;
+    line-height: 1;
+    &_1 {
+      font-size: calc($font-size* 1.8);
+      margin-bottom: 20px;
+    }
+    &_2 {
+      font-size: calc($font-size* 1.2);
+    }
+    &_3 {
+      font-size: calc($font-size* 1.8);
+    }
+  }
+}

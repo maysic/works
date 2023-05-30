@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Салон массажа МассМастер</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+  
+</head>
+<body>
+  <header class="header">
+   <div class="container">
+      <div class="row">
+        <div class="col-xxl-12 header__content">
+          <button class="header__btn" id="burger">
+            <svg class="header__burger" width="30" height="23" viewBox="0 0 30 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="30" height="3" fill="#206C66"/>
+              <rect y="10" width="30" height="3" fill="#206C66"/>
+              <rect y="20" width="30" height="3" fill="#206C66"/>
+            </svg>
+          </button>
+          <div class="header__hide-menu" id="menu">
+            <ul class="header__list">
+              <li class="header__items">
+                <a href="#about" class="header__link">
+                  О нас
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#services" class="header__link">
+                  Услуги
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#masters" class="header__link">
+                  Мастера
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#contacts" class="header__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__items">
+                <a href="#about" class="header__link">
+                  О нас
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#services" class="header__link">
+                  Услуги
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#masters" class="header__link">
+                  Мастера
+                </a>
+              </li>
+              <li class="header__items">
+                <a href="#contacts" class="header__link">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__discription">
+            <span class="header__span">
+              Запись по телефону
+            </span>
+            <a href="tel:+79276268066" class="link-tel">
+              +7 (927) 626 80 66
+            </a>
+          </div>
+          <img src="./img/logo.png" alt="Логотип" class="header__logo">
+        </div>
+      </div>
+   </div>
+
+  </header>
+
+  <section class="hero">
+        <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="img/slide1.jpg" alt="Первый слайд" class="hero__banner-img">
+          <div class="hero__banner-main">
+            <h1 class="hero__header-main">
+              Здоровье и красота, отдых и удовольствие» - наша заботе&nbsp;о&nbsp;вас
+            </h1>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide2.jpg" alt="Второй слайд" class="hero__banner-img">
+          <div class="hero__banner-second banner-slide-2">
+            <h1 class="hero__header-second header-slide-2">
+              При покупке абонемента  десятый сеанс в <small>подарок</small>!
+            </h1>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide3.jpg" alt="Третий слайд" class="hero__banner-img">
+          <div class="hero__banner-second banner-slide-3">
+            <h1 class="hero__header-second header-slide-3">
+              Подарочные <small>сертификаты</small> для ваших <small>друзей</small> и <small>близких</small>
+            </h1>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/slide4.jpg" alt="Четвертый слайд" class="hero__banner-img">
+          <div class="hero__banner-second banner-slide-4">
+            <h1 class="hero__header-second header-slide-4">
+              Акция <small>«Знакомство с мастером»</small> скидка <small>50%</small>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const swiper = new Swiper('.swiper', {
+
+              // And if we need scrollbar
+      effect:'slide',
+      speed:1000,
+      autoplay: {
+      delay: 2000,
+      observer: true,
+      observeParents:true,
+      observeSlideChildren: true,
+      },
+      loop:true,
+    });
+    </script>
+  </section>
+
+  <section class="about">
+    <div class="container about__container">
+      <h2 class="about__header text__header" id="about">
+        О нас
+      </h2>
+      <div class="about__content">
+        <div class="about__text-box">
+          <p class="about__paragraph">
+            Массаж в МассМастер – это незабываемый отдых и
+            удовольствие, поддержание красоты лица и тела и
+            оздоровительный эффект от процедур, а значит отличное
+            самочувствие и прекрасное настроение.            
+          </p>
+
+          <p class="about__paragraph">
+            Первые пять плюсов МассМастер из большого списка:
+          </p>
+          <ul class="about__list">
+            <li class="about__item">
+              Многообразие видов массажа тела и лица на любой вкус и
+                запрос.
+            </li>
+            <li class="about__item">
+              Выбор цены. Услуги массажа и спа-программы от качественных
+              и недорогих до премиальных.
+            </li>
+            <li class="about__item">
+              Редкие и экзотические виды массажа, которые трудно найти в
+                репертуаре других салонов.
+            </li>
+            <li class="about__item">
+              Большой ассортимент косметических средств домашнего ухода
+                за лицом и телом в магазине профессиональной косметики.
+            </li>
+            <li class="about__item">
+              Подарочные сертификаты, акции и скидки постоянным
+                клиентам.
+            </li>
+          </ul>
+        </div>
+        <div class="about__img-box">
+          <img src="img/about-img.jpg " class="about__img" alt="Массаж спины">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container services__container">
+      <h2 class="services__header text__header" id="services">
+        Услуги
+      </h2>
+      <div class="services__content">
+        <div class="services__box">
+          <div class="services__text-box">
+            <h3 class="services__sub-header">
+              Массаж тела:
+            </h3>
+            <ul class="services__list">
+              <li class="services__items">Массаж спины</li>
+              <li class="services__items">Общий массаж</li>
+              <li class="services__items">Антицеллюлитный массаж</li>
+              <li class="services__items">Тайский массаж</li>
+              <li class="services__items">Релакс - массаж</li>
+              <li class="services__items">Массаж ног + ступни</li>
+              <li class="services__items">Креольский массаж бамбуковыми палочками</li>
+              <li class="services__items">Гавайский массаж "Ломи-ломи"</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services__box">
+          <div class="services__text-box">
+            <h3 class="services__sub-header">
+              SPA - программы для тела:
+            </h3>
+            <ul class="services__list">
+              <li class="services__items">Антицеллюлитная</li>
+              <li class="services__items">Детокс (без массажа)</li>
+              <li class="services__items">Детокс (с массажем)</li>
+              <li class="services__items">Талассо - терапия</li>
+              <li class="services__items">Омоложение</li>
+              <li class="services__items">Сила леса</li>
+              <li class="services__items">Льняное укутывание</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services__box">
+          <div class="services__text-box">
+            <h3 class="services__sub-header">
+              Массаж лица:
+            </h3>
+            <ul class="services__list">
+              <li class="services__items">Классический</li>
+              <li class="services__items">Скульптурный</li>
+              <li class="services__items">Миоструктурный</li>
+              <li class="services__items">Массаж Кобидо</li>
+              <li class="services__items">Глубокотканный</li>
+              <li class="services__items">Уходовые программы для лица</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="services__box">
+          <div class="services__text-box">
+            <h3 class="services__sub-header">
+              Уходы для лица:
+            </h3>
+            <ul class="services__list">
+              <li class="services__items">Возрождение</li>
+              <li class="services__items">Экспресс - увлажнение</li>
+              <li class="services__items">Лифтинг и сияние</li>
+              <li class="services__items">Омоложение с фитоэстргенами</li>
+              <li class="services__items">Талассо - терапия для лица</li>
+              <li class="services__items">Лебединая грация</li>
+            </ul>
+          </div>
+        </div>
+        <button class="services__btn btn">
+          <a href="./documents/price.docx" download class="services__link">Узнать цены</a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="masters">
+    <div class="container about__container master__container">
+      <h2 class="masters__header text__header" id="masters">
+        Мастера
+      </h2>
+      <div class="masters__content">
+        <div class="masters__box">
+          <img src="img/olga-tkachenko.jpg" alt="Ольга Ткаченко" class="masters__img">
+          <div class="masters__text">
+            <h3 class="masters__sub-header">
+              Ольга Ткаченко
+            </h3>
+            <p class="masters__discription">
+              Врач спортивной медицины, сертифицированный специалист по
+              лечебной физкультуре, классическому, детскому тайскому, массажу,
+              кинезиологии, кинезиотейпированию, член международной ассоциации
+              войтатерапевтов.
+            </p>
+            <span class="masters__service">
+              Преподователь массажа
+            </span>
+            <span class="masters__service">
+              Услуги:
+            </span>
+            <ul class="masters__list">
+              <li class="masters__item">
+                Детский массаж и лечебная физкультура, консультирование родителей
+              </li>
+              <li class="masters__item">
+                Кинезио-диагностика и кинезио-тейпирование лица и тела
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="masters__box">
+          <img src="img/djamilya-adiyatullina.jpg" alt="Джамиля Адиятуллина" class="masters__img">
+          <div class="masters__text">
+            <h3 class="masters__sub-header">
+              Джамиля Адиятуллина
+            </h3>
+            <p class="masters__discription">
+              Спа-терапевт, специалист по уходу за лицом и массажу лица; медицинское образование, стаж практики 10 лет. Преподователь массажа.
+            </p>
+            <span class="masters__service">
+              Преподователь массажа
+            </span>
+            <span class="masters__service">
+              Услуги:
+            </span>
+            <ul class="masters__list">
+              <li class="masters__item">
+                Классический массаж лица
+              </li>
+              <li class="masters__item">
+                Массаж лица Кобидо
+              </li>
+              <li class="masters__item">
+                Глубоко-тканный массаж лица
+              </li>
+              <li class="masters__item">
+                Мио-структурный массаж лица
+              </li>
+              <li class="masters__item">
+                Скульптурный массаж лица
+              </li>
+              <li class="masters__item">
+                Уходовые программы для лица
+              </li>
+              <li class="masters__item">
+                SPA- программы для тела
+              </li>
+              <li class="masters__item">
+                Массаж горячими камнями
+              </li>
+              <li class="masters__item">
+                Релакс-массаж тела
+              </li>
+              <li class="masters__item">
+                Аюрведический массаж
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="masters__box box-3">
+          <img src="img/pavel-lazarev.jpg" alt="Павел Лазарев" class="masters__img">
+          <div class="masters__text">
+            <h3 class="masters__sub-header">
+              Павел Лазарев
+            </h3>
+            <p class="masters__discription">
+              Специалист по антицеллюлитному, классическому и другим видам
+              массажа, судья региональных чемпионатов по массажу 2014-2021 г.г.
+              стаж практики 17 лет.
+            </p>
+            <span class="masters__service">
+              Преподователь массажа
+            </span>
+            <span class="masters__service">
+              Услуги:
+            </span>
+            <ul class="masters__list">
+              <li class="masters__item">
+                Классический массаж
+              </li>
+              <li class="masters__item">
+                Антицеллюлитный массаж
+              </li>
+              <li class="masters__item">
+                Лимфо-дренажный массаж
+              </li>
+              <li class="masters__item">
+                Китайский массаж Гуаша
+              </li>
+              <li class="masters__item">
+                Вакуумно-баночный массаж
+              </li>
+              <li class="masters__item">
+                Креольский массаж бамбуковыми палочками
+              </li>
+              <li class="masters__item">
+                Медовый массаж
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="masters__box">
+          <img src="img/arsen-abdulaliev.jpg" alt="Арсен Абдулалиев" class="masters__img">
+          <div class="masters__text">
+            <h3 class="masters__sub-header">
+              Арсен Абдулалиев
+            </h3>
+            <p class="masters__discription">
+              Профессиональный массажист, специалист по классическому, тайскому,
+              гавайскому массажу; медицинское образование, стаж практики 7 лет.
+            </p>
+            <span class="masters__service">
+              Преподователь массажа
+            </span>
+            <span class="masters__service">
+              Услуги:
+            </span>
+            <ul class="masters__list">
+              <li class="masters__item">
+                Классический массаж
+              </li>
+              <li class="masters__item">
+                Гавайский массаж
+              </li>
+              <li class="masters__item">
+                Тайский массаж
+              </li>
+              <li class="masters__item">
+                Релакс - массаж
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+      <div class="master__btn-box">
+        <button class="services__btn master__btn">
+          <a href="tel:+79276268066" class="masters__link services__link">
+            Записаться
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <h2 class="footer__header text__header" id="contacts">
+        Контакты
+      </h2>
+      <div class="footer__content">
+        <div class="footer__text-box">
+          <div class="footer__box-1">
+            <span class="footer__info">
+              <span class="footer__place">Адрес:</span> 
+              <span class="footer__link-place">г. Саратов ул. Московская д. 149а, 4 этаж (на лифте)</span>
+            </span>
+            <span class="footer__info">
+              <span class="footer__place">Телефон:</span>
+              <a href="tel:+79276268066" class="footer__link-place">+7 (927) 626 80 66</a>
+            </span>
+            <span class="footer__info">
+              <span class="footer__place">EMAIL:</span>
+              <a href="mailto:mass-master@yandex.ru" class="footer__link-place ">mass-master@yandex.ru</a>
+            </span>
+          </div>
+          <div class="footer__box-2">
+            <h3 class="footer__sub-header">
+              Присоединяйтесь к нам
+            </h3>
+            <div class="footer__social">
+              <ul class="footer__social-list">
+                <li class="foter__social-item">
+                  <a href="https://vk.com/public212749474" class="footer__social-link footer__vk"></a>
+                </li>
+                <li class="foter__social-item">
+                  <a href="#" class="footer__social-link footer__telegram">Телега</a>
+                </li>
+              </ul>              
+            </div>
+          </div>
+          <!-- <div class="footer__box-3">
+            <h3 class="footer__sub-header">
+              Отзывы
+            </h3>
+            <ul class="footer__review-list">
+              <li class="footer__review-item">
+                <a href="https://2gis.ru/saratov/search/%D1%88%D0%BA%D0%BE%D0%BB%D0%B0%20%D0%BC%D0%B0%D1%81%D1%81%D0%B0%D0%B6%D0%B0/rubricId/51356/firm/70000001022559892" class="footer__review-link footer__link-2gis">
+                  2ГИС
+                </a>
+              </li>
+              <li class="footer__review-item">
+                <a href="https://saratov.zoon.ru/trainings/shkola_massazha_massmaster_na_moskovskoj_ulitse_149a/" class="footer__review-link footer__link-zoon">
+                  ZOON
+                </a>
+              </li>
+              <li class="footer__review-item">
+                <a href="https://yandex.ru/maps/org/shkola_massazha_massmaster/49678457237/reviews/?ll=46.014636%2C51.538100&tab=reviews&z=13.94" class="footer__review-link footer__link-yandex">
+                 Yandex
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        <div id="map" style="min-height: 250px;" class="footer__map"></div>
+      </div>
+      <script>
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.538106, 46.014637], 
+                zoom: 13
+            });
+
+                            
+            // DG.marker([51.538106, 46.014637]).addTo(map).bindPopup('ул. им. Разина С.Т., д. 30а <br> Режим работы: 08:00 - 20:00');
+
+            var myIcon = DG.icon({
+                  iconUrl: 'img/logo-map.png',
+                  iconSize: [30, 30],
+                  iconAnchor: [0, 30],
+                  popupAnchor: [15, -15],
+                  // shadowAnchor: [22, 94]
+              });
+
+              DG.marker([51.538106, 46.014637], {icon: myIcon}).addTo(map).bindPopup('Время работы<br>11:00 - 21:00');
+        });
+      </script>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
