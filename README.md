@@ -6,3 +6,4 @@
 - Redux
 - Mobx
 - Webpack
+- TailWind
